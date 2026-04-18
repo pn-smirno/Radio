@@ -13,13 +13,13 @@ namespace МоеРадио
             InitializeComponent();
         }
 
-        // Кнопка СТАРТ
+        //СТАРТ
         private void Старт_Click(object sender, RoutedEventArgs e)
         {
-            // Берём ссылку из текстового поля
+            
             string radioUrl = UrlTextBox.Text;
 
-            // Проверяем, что ссылка не пустая
+            
             if (!string.IsNullOrEmpty(radioUrl))
             {
                 try
@@ -38,7 +38,7 @@ namespace МоеРадио
             }
         }
 
-        // Кнопка СТОП
+        //СТОП
         private void Стоп_Click(object sender, RoutedEventArgs e)
         {
             player.Stop();
